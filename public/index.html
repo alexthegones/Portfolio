@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" type="" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>Mon Site</title>
   </head>
   <body>
     <header>
-      <div class="media-container">
-       
-      </div>
+      <div class="media-container"></div>
       <ul>
         <li class=""><a href="#home">Home</a></li>
         <li class=""><a href="#portfolio">Portfolio</a></li>
@@ -25,24 +28,46 @@
     <section id="home">
       <!-- <img src="./accueil.jpeg" class="background" alt=""> -->
       <div class="presentation">
-        <h1 class="name">Alexandre Billot</h1>
         <h1 id="TitleAnim"></h1>
-         <div class="media-container">
-        <div class="media-btn">
-           <a
-            href="https://github.com/alexthegones/"
-            target="_blank">
-            <img src="git.svg" alt="" class="icone"/>
-          </a>
+        <div class="media-container">
+          <div class="media-btn">
+            <div class="icon">
+              <a
+                class=""
+                href="https://github.com/alexthegones/"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <span>Github</span>
+          </div>
+          <div class="media-btn">
+            <div class="icon">
+              <a
+                class=""
+                href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEbMdaufbFE5gAAAW47QDUw4-QFgHhArerXU2CNBj9wRil-hRY0OVI3ART0prO5d0-iGQjA3qQUupWeGfhe42M8aPbJJMUgYo64UiykaRbuOl26ARXOfHrJXRtQy5IAtJx0SOw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexandre-billot"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <span>Linkedin</span>
+          </div>
+          <!-- <div class="media-btn">
+            <a href="https://github.com/alexthegones/" target="_blank">
+              <img src="/github.svg" alt="">
+            </a>
+          </div>
+          <div class="media-btn">
+            <a
+              href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEbMdaufbFE5gAAAW47QDUw4-QFgHhArerXU2CNBj9wRil-hRY0OVI3ART0prO5d0-iGQjA3qQUupWeGfhe42M8aPbJJMUgYo64UiykaRbuOl26ARXOfHrJXRtQy5IAtJx0SOw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexandre-billot"
+              target="_blank"
+            >
+              <img src="/linkedin.svg" alt="">
+            </a>
+          </div> -->
         </div>
-        <div class="media-btn">
-          <a
-            href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEbMdaufbFE5gAAAW47QDUw4-QFgHhArerXU2CNBj9wRil-hRY0OVI3ART0prO5d0-iGQjA3qQUupWeGfhe42M8aPbJJMUgYo64UiykaRbuOl26ARXOfHrJXRtQy5IAtJx0SOw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexandre-billot"
-            target="_blank">
-            <img src="Linkedin_icon.svg" alt="" class="icone"/>
-          </a>
-        </div>
-      </div>
       </div>
     </section>
 
@@ -82,6 +107,6 @@
       <div class="skills-container container"></div>
     </section>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="assets/js/typeWriter.js"></script>
+    <script src="/js/typeWriter.js"></script>
   </body>
 </html>
