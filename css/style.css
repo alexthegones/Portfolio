@@ -137,6 +137,10 @@ li:hover::after {
     background: #0077b5;
 }
 
+.media-container .media-btn:nth-child(3):hover .icon {
+    background: black;
+}
+
 .media-container .media-btn .icon i {
     font-size: 25px;
     line-height: 30px;
@@ -151,6 +155,7 @@ li:hover::after {
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
+    margin-left: 5px;
     transition: all 0.3s ease-out;
 }
 
@@ -160,6 +165,10 @@ li:hover::after {
 
 .media-container .media-btn:nth-child(2) span {
     color: #0077b5;
+}
+
+.media-container .media-btn:nth-child(3) span {
+    color: black
 }
 
 /* 
@@ -204,7 +213,7 @@ li:hover::after {
     font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 40px;
-    font-weight: 100;
+    font-weight: 600;
     line-height: 50px;
     letter-spacing: 1px;
     padding: 0 0 40px;
@@ -262,14 +271,15 @@ li:hover::after {
     opacity: 1;
 }
 
+.skills-container .skill-card .face.face1 .content img {
+    margin: 5px;
+    width: 120px;
+}
+
 .skills-container .skill-card .face.face2 .content img {
     margin: 5px;
     width: 80px;
 }
-
-/* .skills-container .skill-card:hover .face.face2 .content img {
-   max-width: 125px;
-} */
 
 .skills-container .skill-card .face.face1 .content h3 {
     margin: 10px 0 0;
@@ -302,6 +312,7 @@ li:hover::after {
 .skills-container .skill-card .face.face2 .content p {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .skills-container .skill-card .face.face2 .content a {
@@ -324,6 +335,8 @@ li:hover::after {
 
 #contact {
     height: 100vh;
+    padding-top: 5em;
+
     background-color: #756E6C;
 }
 
@@ -332,9 +345,8 @@ li:hover::after {
     font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 40px;
-    font-weight: 100;
-    line-height: 50px;
+    font-weight: 600;
     letter-spacing: 1px;
-    padding: 0 0 40px;
+    padding: 5px;
     border-bottom: double #555;
 }
