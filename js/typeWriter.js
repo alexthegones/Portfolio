@@ -7,28 +7,13 @@ new Typewriter(anim, media, {
   loop: true,
 })
   .changeDelay(100)
-  .typeString("Bonjour et bienvenue, <br>")
+  .typeString("Bonjour et bienvenue sur mon site personnel, <br>")
   .pauseFor(500)
-  .typeString("je m'appelle <strong>Alexandre</strong> ")
+  .typeString("je suis <strong>Alexandre</strong> ")
   .pauseFor(1000)
-  .typeString("et je suis Developpeur Web. <br><br>")
+  .typeString("et je suis Developpeur Web. ")
   .typeString(
     '<img src="https://img.icons8.com/cotton/64/000000/developer.png"/> '
   )
-  .pauseFor(1500)
-  .typeString('<img src="https://img.icons8.com/color/48/000000/html-5.png"/>')
-  .typeString('<img src="https://img.icons8.com/color/48/000000/css3.png"/>')
-  .pauseFor(1500)
-  .typeString(
-    '<img src="https://img.icons8.com/color/60/000000/javascript.png"/> '
-  )
-  .pauseFor(1500)
-  .typeString('<img src="https://img.icons8.com/dusk/60/000000/sql.png"/> ')
-  .pauseFor(1500)
-  .typeString(
-    '<img src="https://img.icons8.com/officel/60/000000/php-logo.png"/> '
-  )
-  .pauseFor(1500)
-  .typeString('<img src="https://img.icons8.com/color/60/000000/symfony.png"/>')
 
   .start();
