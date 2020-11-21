@@ -15,7 +15,6 @@
   </head>
   <body>
     <header>
-      <div class="media-container"></div>
       <ul>
         <li class=""><a href="#home">Home</a></li>
         <li class=""><a href="#portfolio">Portfolio</a></li>
@@ -45,7 +44,7 @@
               href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEbMdaufbFE5gAAAW47QDUw4-QFgHhArerXU2CNBj9wRil-hRY0OVI3ART0prO5d0-iGQjA3qQUupWeGfhe42M8aPbJJMUgYo64UiykaRbuOl26ARXOfHrJXRtQy5IAtJx0SOw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexandre-billot"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
           <span>Linkedin</span>
@@ -59,27 +58,36 @@
           <span>E-mail</span>
         </div>
       </div>
+      <!-- <div class="algo"> -->
+      <p class="algo">while(!success)
+         { 
+           try++; 
+           if(success) improve(); 
+          }
+      </p>
+      <!-- </div> -->
     </section>
 
     <section id="about">
       <h1 class="TitleAbout">ABOUT ME</h1>
-      <p class="about-info"></p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
-      voluptatibus, illo laboriosam explicabo debitis reprehenderit facilis ea
-      ab voluptatum aspernatur, vitae est consequuntur. Commodi cumque odio
-      aspernatur ex nisi nam. Optio molestiae voluptate porro hic placeat vitae
-      dignissimos soluta aliquid quae, iusto doloremque sapiente fugit earum
-      neque aut explicabo distinctio adipisci perspiciatis nostrum quam
-      aspernatur nobis molestias fuga. Rerum, tenetur. Perferendis, placeat sint
-      aperiam beatae nihil corrupti quidem enim amet cumque, repellendus vitae.
-      Suscipit illo officiis vitae perferendis at? Sunt voluptate tenetur a
-      accusantium reiciendis deserunt? Ratione itaque ab culpa! Tempora
-      temporibus commodi eveniet quisquam veritatis itaque accusamus rem,
-      similiovident quae.
+      <p class="about-info">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+        voluptatibus, illo laboriosam explicabo debitis reprehenderit facilis ea
+        ab voluptatum aspernatur, vitae est consequuntur. Commodi cumque odio
+        aspernatur ex nisi nam. Optio molestiae voluptate porro hic placeat
+        vitae dignissimos soluta aliquid quae, iusto doloremque sapiente fugit
+        earum neque aut explicabo distinctio adipisci perspiciatis nostrum quam
+        aspernatur nobis molestias fuga. Rerum, tenetur. Perferendis, placeat
+        sint aperiam beatae nihil corrupti quidem enim amet cumque, repellendus
+        vitae. Suscipit illo officiis vitae perferendis at? Sunt voluptate
+        tenetur a accusantium reiciendis deserunt? Ratione itaque ab culpa!
+        Tempora temporibus commodi eveniet quisquam veritatis itaque accusamus
+        rem, similiovident quae.
+      </p>
     </section>
 
     <section class="skills" id="skill">
-      <h1>SKILLS</h1>
+      <h1>COMPETENCES <img src="/images/programming.png" alt="" /></h1>
       <!-- <p class="skills-info">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum facilis
         consectetur dolorem quos aut magnam eveniet eaque labore facere,
@@ -95,7 +103,7 @@
       </p> -->
 
       <div class="skills-container">
-        <div class="skill-card">
+        <div id="skill-card1" class="skill-card">
           <div class="face face1">
             <div class="content">
               <img src="/images/web-design.png" alt="" />
@@ -118,7 +126,7 @@
             </div>
           </div>
         </div>
-        <div class="skill-card">
+        <div id="skill-card2" class="skill-card">
           <div class="face face1">
             <div class="content">
               <img src="/images/database-storage.png" alt="" />
@@ -140,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="skill-card">
+        <div id="skill-card3" class="skill-card">
           <div class="face face1">
             <div class="content">
               <img src="/images/maintenance.png" alt="" />
@@ -207,13 +215,24 @@
     </section>
 
     <footer>
-      <div class="social-links">
-        <p>Vous pouvez me suivre sur</p>
-        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="" target="_blank"><i class="fab fa-github"></i></a>
+      <p>&copy; Copyright 2020</p>
+      <div class="social-menu">
+        <p>Retrouvez moi sur</p>
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
       </div>
     </footer>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="/js/typeWriter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
