@@ -1,14 +1,36 @@
+var medias = document.querySelectorAll(".media-btn");
+var skills = document.querySelectorAll(".skill-card");
+var algo = document.querySelector(".algo");
+
 var controller = new ScrollMagic.Controller();
+const TL = gsap.timeline({ paused: true });
 
+var tween = TweenMax.staggerFrom(
+  skills,
+  2,
+  { top: -50, opacity: 0, ease: "power2.out" },
+  0.3
+);
 var scene = new ScrollMagic.Scene({
-    triggerElement: ".skills-container",
-    triggerHook: 0.4,
-//   reverse: false
+  triggerElement: ".skills-container",
 })
-
-  .setClassToggle(".skills-container", "fade-in")
+  .triggerHook(0.3)
+  .setTween(tween)
   .addTo(controller);
 
+// .setClassToggle(".skills-container", "fade-in")
+
+window.addEventListener("load", () => {
+  TL.from(algo, 1.5, { top: -150, ease: "power2.out" }, 0.3).staggerFrom(
+    medias,
+    1.5,
+    { left: -200, ease: "power2.out" },
+    0.3,
+    "-=1"
+  );
+
+  TL.play();
+});
 // var cards = document.getElementsByClassName("skill-card");
 // for (var i = 0; i < cards.length; i++) {
 //   // create a scene for each element
@@ -22,4 +44,9 @@ var scene = new ScrollMagic.Scene({
 //     .addTo(controller);
 // }
 
-var twenn = TweenMax.from("skills-container", 1, { left: -700, rotation: -50, ease: Power2.easeInOut })
+// window.addEventListener("scroll", () => {
+//   TL
+//     .staggerFrom(skills, 2, { top: -50, opacity: 0, ease: "power2.out" }, 0.3)
+
+//     TL.play();
+//   });

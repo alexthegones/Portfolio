@@ -7,11 +7,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Roboto Slab",
-        "Helvetica Neue",
-        Helvetica,
-        Arial,
-        sans-serif;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -131,7 +127,7 @@ header ul li:hover::after {
     font-size: 30px;
     white-space: pre;
     right: 7%;
-    top: 10%;
+    top: 8%;
 
 }
 
@@ -149,11 +145,12 @@ header ul li:hover::after {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 30%;
+    top: 20%;
     margin-left: 10px;
 }
 
 .media-container .media-btn {
+    position: relative;
     width: 60px;
     height: 60px;
     margin: 5px;
@@ -248,15 +245,14 @@ header ul li:hover::after {
 
 /************** SKILLS ***********/
 
-#skill {
+.skills {
     height: 100vh;
-    background-color: #756E6C;
-    padding-top: 5em;
+    /* background-color: #756E6C; */
+    padding-top: 1em;
 }
 
 .skills h1 {
-    color: #c9d0d4;
-    font-family: 'Helvetica Neue', sans-serif;
+    color: #000000;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -274,19 +270,22 @@ header ul li:hover::after {
 }
 
 .skills-container {
+    display: flex;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s linear;
 }
 
 .skills-container .skill-card {
-    margin: 20px;
     position: relative;
+    margin: 20px;
     cursor: pointer;
+    left: 20%;
 }
 
 .skills-container .skill-card .face {
@@ -384,12 +383,11 @@ header ul li:hover::after {
 #contact {
     height: 100vh;
     padding-top: 5em;
-    background-color: #756E6C;
+    /* background-color: #756E6C; */
 }
 
 .contact h1 {
-    color: #c9d0d4;
-    font-family: 'Helvetica Neue', sans-serif;
+    color: #000000;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -472,3 +470,13 @@ footer p {
 .fade-in {
     opacity: 1;
 }
+
+/* @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
