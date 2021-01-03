@@ -11,9 +11,6 @@ new Typewriter(anim, media, {
   .pauseFor(500)
   .typeString("je suis <strong>Alexandre</strong> ")
   .pauseFor(1000)
-  .typeString("et je suis <span style=color:#f7ca18> Développeur Web </span>")
-  .typeString(
-    '<img src="https://img.icons8.com/cotton/64/000000/developer.png"/> '
-  )
-
+  .typeString("et je suis <span style=color:#f7ca18> Développeur Web </span> <img src=https://img.icons8.com/cotton/64/000000/developer.png/>")
+  
   .start();
