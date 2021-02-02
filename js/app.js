@@ -1,8 +1,8 @@
 
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() >= 50) {
-//         $('header').css('background-color', 'rgba(0,0,0,0)');
-//     } else {
-//         $('header').css('background-color', '#009688');
-//     }
-// });
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 500) {
+        $('nav').css('background-color', '#17283d');
+    } else {
+        $('nav').css('background-color', 'transparent');
+    }
+});
