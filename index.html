@@ -13,14 +13,15 @@
 </head>
 
 <body>
-  <nav>
-    <!-- <span><img src="/images/AB-logo.png" alt=""></span> -->
-    <a href="">Alexandre Billot</a>
+  <nav class="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skill">Compétences</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
+      <img src="/images/AB-logo.png" alt="">
+    </ul>
+    <ul>
+      <li class="home active"><a href="#home">Home</a></li>
+      <li class="about"><a href="#about">About</a></li>
+      <li class="skill"><a href="#skill">Compétences</a></li>
+      <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
     </ul>
   </nav>
 
@@ -28,9 +29,9 @@
     <!-- <img src="/images/AB-logo.png" alt="Mon logo personnalisé"> -->
     <div class="presentation">
       <span>Bonjour je m'appelle</span>
-      <h2>Alexandre BILLOT</h2>
-      <!-- <div class="name">Alexandre BILLOT</div> -->
-      <h1 id="TitleAnim"></h1>
+      <h3>Alexandre BILLOT</h3>
+      <span>Et je suis </span>
+      <span id="TitleAnim"></span>
     </div>
     <div class="media-container">
       <div class="button">
@@ -39,7 +40,7 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
-        <span>Mon Github</span>
+        <span> Github</span>
       </div>
       <div class="button">
         <div class="icon">
@@ -48,7 +49,7 @@
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
-        <span>Mon LinkedIn</span>
+        <span> LinkedIn</span>
       </div>
       <div class="button">
         <div class="icon">
@@ -56,7 +57,7 @@
             <i class="fas fa-at"></i>
           </a>
         </div>
-        <span>Mon E-mail</span>
+        <span> E-mail</span>
       </div>
     </div>
 
@@ -71,11 +72,11 @@
   </section>
 
   <section id="about">
-    <h2 class="about-title">About me</h2>
+    <h2 class="title">About me</h2>
     <div class="about-content">
       <img src="/images/profil.jpg" class="profile-img" alt="" />
       <div class="about-info">
-        <img src="https://img.icons8.com/carbon-copy/100/000000/address.png"/> Nancy, France
+        <img src="https://img.icons8.com/carbon-copy/100/000000/address.png" /> Nancy, France
         <!-- <i class="fas fa-map-marker-alt" class="position"> Nancy, France</i> -->
         <p>
           Très intéressé par les nouvelles technologies depuis très jeune et
@@ -100,7 +101,7 @@
   </section>
 
   <section id="skill">
-    <h1>COMPETENCES <img src="/images/programming.png" alt="" /></h1>
+    <h2 class="title">Compétences <img src="/images/programming.png" alt="" /></h2>
     <div class="skill">
       <div class="skills-info">
         <p>
@@ -167,6 +168,18 @@
       </div>
     </div>
   </section>
+  <section id="portfolio">
+    <h2 class="title">Mes créations</h2>
+
+    <div class="portfolio-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui explicabo aspernatur, quae quia non laboriosam perferendis natus provident! Numquam quas temporibus deleniti eaque tempore id ipsum, odio ipsa rem?
+      Fuga suscipit quas odit aperiam ab iusto consequatur at accusantium officia pariatur consequuntur, cumque exercitationem voluptates? Eligendi, modi. Autem tempore eaque tenetur molestias vel modi harum corrupti nesciunt rerum dolorum.
+      Aperiam esse enim, tenetur illo iure quae totam mollitia rerum modi omnis hic culpa voluptate exercitationem quod magnam eum aspernatur accusantium similique atque pariatur id, repellendus eligendi! In, vitae aut.
+      Enim cum fuga nihil deserunt magnam iste, eos quidem tempora architecto assumenda, necessitatibus animi accusantium sapiente delectus. Accusantium quae nemo laboriosam fugiat esse, cum ipsum nam commodi, modi eum quidem?
+      Quibusdam neque laudantium distinctio! Earum alias praesentium, tempora, dolorum obcaecati labore aliquam autem amet nisi illum, magni quisquam fuga? Dolores quaerat aliquid velit rem minima ipsa neque maiores autem saepe.
+    </div>
+
+  </section>
   <footer>
     <p>&copy; Copyright 2021 - Alexandre Billot</p>
     <div class="social-menu">
@@ -182,8 +195,8 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+  crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="/js/typeWriter.js"></script>
