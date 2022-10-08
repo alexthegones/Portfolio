@@ -1,6 +1,6 @@
 //* changement d'apparence de la navbar au scroll
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 500) {
+    if ($(window).scrollTop() >= 200) {
         $('nav').css('background-color', '#17283d');
     } else {
         $('nav').css('background-color', 'transparent');
@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-
+        console.log(pageYoffset);
         if (pageYOffset >= sectionTop - sectionHeight / 10) {
             current = section.getAttribute('id');
         } 

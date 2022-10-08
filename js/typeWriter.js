@@ -8,6 +8,6 @@ new Typewriter(anim, media, {
 })
   .changeDelay(100)
   .pauseFor(500)
-  .typeString("<span style=color:#f7ca18> Développeur Web </span> <img src=https://img.icons8.com/cotton/50/000000/developer.png/>")
+  .typeString("<span style=color:#f7ca18> Informaticien </span> <img src=https://img.icons8.com/cotton/50/000000/developer.png/>")
   
   .start();
